@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <link href="http://localhost:8065/static/css/bootstrap-3.3.5.min.css" type="text/css" rel="stylesheet" />
+    <link href="http://localhost:8065/static/css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+    <form id="findTeamForm">
+        <h4>Find Your Team</h4>
+        <div class="form-group">
+            <input type="text" id="findTeam" class="form-control" placeholder="development" maxlength="128" spellcheck="false">
+        </div>
+        <button id="submit" class="btn btn-md btn-primary pull-right" type="submit">Go!</button>
+    </form>
+
+    <webview style="display:none;" src="http://localhost:8065/" minheight="250" minwidth="250" webview="on"></webview>
+    <script src="scripts.js"></script>
+</body>
+</html>
